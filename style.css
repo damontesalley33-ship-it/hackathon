@@ -1,0 +1,88 @@
+<link rel="stylesheet" href="style.css">
+/* ---------- GENERAL ---------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #1e1e1e, #111);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #00ff00;
+    color: black;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    padding: 12px 25px;
+    font-size: 16px;
+    background-color: #0f0;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #0f0;
+}
+
+/* ---------- USER CARD ---------- */
+.user-card {
+    background-color: #222;
+    padding: 20px;
+    border: 2px solid #0f0;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #0f0;
+}
+
+.user-card h2 {
+    margin: 10px 0;
+    color: #0f0;
+}
+
+.user-card p {
+    margin: 5px 0;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #0f0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ---------- RESPONSIVENESS ---------- */
+@media (max-width: 500px) {
+    .user-card {
+        width: 90%;
+    }
+}
