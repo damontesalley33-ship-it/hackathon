@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Random User App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Random User Generator</h1>
+    <p>Click the button to fetch a random user from the API!</p>
+  </header>
+
+  <main>
+    <button id="fetchUserBtn">Get Random User</button>
+
+    <section id="userCard" class="user-card hidden">
+      <img id="userImage" src="" alt="User Picture">
+      <h2 id="userName"></h2>
+      <p id="userEmail"></p>
+      <p id="userLocation"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Mini Web App using Random User API</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
